@@ -1,5 +1,8 @@
 the-greeks = [αβγδεζηθικλμνξοπρςστυφχψω]
 japanese = [日本語]
 lower = [abcdefghijklmnopqrstuvwxyz]
+upper = [ABCDEFGHIJKLMNOPQRSTUVWXYZ]
+Numurals = 0123456789
+Arabic = [ا	ب	ج	د	ه	و	ز	ح	ط	ي	ك	ل	م	ن	ص	ع	ف	ض	ق	ر	س	ت	ث	خ	ذ	ظ	غ	ش	ء]
 
 
