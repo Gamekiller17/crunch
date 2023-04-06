@@ -27,7 +27,7 @@ UNAME_LOOKUP = $(shell uname -s)
 
 # General variables
 PACKAGE	    = crunch
-VERSION	    = 3.6
+VERSION	    = 3.6.1
 PREFIX	    = /usr
 DISTDIR	    = $(PACKAGE)-$(VERSION)
 DISTFILES   = crunch.c crunch.1 charset.lst
