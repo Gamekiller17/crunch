@@ -1,15 +1,4 @@
-Copyright (C) 2004 by mimayin@aciiid.ath.cx
-Copyright (C) 2008, 2009, 2010, 2011, 2012 by bofh28@gmail.com
-Copyright (C) 2023 by rzoh8gw2@duck.com
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-crunch version 1.0 was written by <mimayin@aciiid.ath.cx>
-all later versions of crunch have been updated by <bofh28@gmail.com>
-but this fork was updated by gamekiller17 <rzoh8gw2@duck.com>
  
 Installation: 
 
