@@ -1954,7 +1954,7 @@ size_t outlen; /* temp for size of narrow output string */
 }
 
 static void usage() {
-  fprintf(stderr,"Crunch %s\n", version);
+  fprintf(stderr,"Crunch 3.6.1", version);
   fprintf(stderr,"Copyright (c) 2009-2013 bofh28 <bofh28@gmail.com>\n\n");
   fprintf(stderr,"Usage: crunch <minimum-length> <maximum-length> [<characters>] [options]\n\n");
   fprintf(stderr,"[characters]\n");
