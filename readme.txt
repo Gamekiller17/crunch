@@ -10,7 +10,7 @@ $sudo make && make install
 Usage: $crunch <minimum-length> <maximum-length> [<characters>] [options]
 
 [characters]
-    abcd... = Lowercase letters, ABCD... = Uppercase letters, 0123... = Numbers, @!#$... = Symbols, <backward slash> = Space, <double quoted space> = Space
+    abcd... = Lowercase letters, ABCD... = Uppercase letters, 0123... = Numbers, @!#$... = Symbols, \ = Space, " " = Space
 
 Options: [-b <number><sizetype>] [-c <number>] [-d <number><pattern>] [-e <string>] [-f <file>] [-i] [-l] [-o <file>] [-p <charset>] [-q <file>] [-r] [-s] [-t <pattern>] [-u] [-z <method>]
 
