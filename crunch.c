@@ -17,18 +17,7 @@
  *  crunch version 1.0 was written by mimayin@aciiid.ath.cx
  *  all later versions of crunch have been updated by bofh28@gmail.com
  *
- *  TODO: Listed in no particular order
- *         add resume support to permute (I am not sure this is possible)
- *         make permute more intelligent (min, max) (I am not sure this is possible either)
- *         support SIGINFO when Linux supports it, use SIGUSR1 until SIGINFO is available
- *         finalbytecount isn't currently correct for unicode chars unless -p used
- *         let user specify placeholder characters (@,%^)
- *         add date support?
- *         specify multiple charset names using -f i.e. -f charset.lst + ualpha 123 +
- *         make permute use -e
- *         revamp compression part of renamefile 7z doesn't delete original file
- *         size calculations are wrong when min or max is larger than 12
- *         write word to temp file for resuming after power outage
+ *  
 
 #include <assert.h>
 #include <locale.h>
