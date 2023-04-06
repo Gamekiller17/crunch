@@ -2174,11 +2174,39 @@ size_t outlen; /* temp for size of narrow output string */
 }
 
 static void usage() {
-  fprintf(stderr,"crunch version %s\n\n", version);
-  fprintf(stderr,"Crunch can create a wordlist based on criteria you specify.  The outout from crunch can be sent to the screen, file, or to another program.\n\n");
-  fprintf(stderr,"Usage: crunch <min> <max> [options]\n");
-  fprintf(stderr,"where min and max are numbers\n\n");
-  fprintf(stderr,"Please refer to the man page for instructions and examples on how to use crunch.\n");
+  fprintf(stderr,"Crunch %s\n", version);
+  fprintf(stderr,"Copyright (c) 2009-2013 bofh28 <bofh28@gmail.com>\n\n");
+  fprintf(stderr,"Usage: crunch <minimum-length> <maximum-length> [<characters>] [options]\n\n");
+  fprintf(stderr,"[characters]\n");
+  fprintf(stderr,"    abcd... = Lowercase letters, ABCD... = Uppercase letters, 0123... = Numbers, @!#$... = Symbols, <backward slash> = Space, <double quoted space> = Space\n\n");
+
+  fprintf(stderr,"Options: [-b <number><sizetype>] [-c <number>] [-d <number><pattern>] [-e <string>] [-f <file>] [-i] [-l] [-o <file>] [-p <charset>] [-q <file>] [-r] [-s] [-t <pattern>] [-u] [-z <method>]\n\n");
+  fprintf(stderr,"[Options]\n");
+  fprintf(stderr,"    -b <number><sizetype>          : Sepecifes output file size. Required: [-o START]\n");
+  fprintf(stderr,"    -c <number>                    : Specifies the number of lines in output file. Required: [-o START]\n");
+  fprintf(stderr,"    -d <number><pattern>           : Limits character duplicate limit\n");
+  fprintf(stderr,"    -e <string>                    : String to end at\n");
+  fprintf(stderr,"    -f <file>                      : Specifies character set from a charset.lst file\n");
+  fprintf(stderr,"    -i                             : Inverts the output from left to right to right to left\n");
+  fprintf(stderr,"    -l                             : Specifies pattern symbols as literals. Required: [-t]\n");
+  fprintf(stderr,"    -o <file>                      : Specifies output file\n");
+  fprintf(stderr,"    -p <charset>                   : Generate characters that don't have repeating characters\n");
+  fprintf(stderr,"    -p <word1> <word2> <word3> ... : Generate words that don't have repeating characters\n");
+  fprintf(stderr,"    -q <file>                      : Same as [-p] but words/characters are taken from a file\n");
+  fprintf(stderr,"    -r                             : Resume from a specified output file. Required: [-o]\n");
+  fprintf(stderr,"    -s <string>                    : String to start from\n");
+  fprintf(stderr,"    -t <pattern>                   : Specifies pattern\n");
+  fprintf(stderr,"        [Patterns]\n");
+  fprintf(stderr,"        @ = Lowercase letters\n");
+  fprintf(stderr,"        , = Uppercase letters\n");
+  fprintf(stderr,"        % = Numbers\n");
+  fprintf(stderr,"        ^ = Symbols\n");
+  fprintf(stderr,"    -u                             : Disables the printpercentage thread\n");
+  fprintf(stderr,"    -z <method>                    : Compress output file\n");
+  fprintf(stderr,"        [Methods]\n");
+  fprintf(stderr,"        gzip    => Speed = Fast,     Compresstion = Low\n");
+  fprintf(stderr,"        bzip2   => Speed = Moderate, Compresstion = Medium\n");
+  fprintf(stderr,"        7z      => Speed = Slow,     Compresstion = High\n\n");
 }
 
 static wchar_t *resumesession(const char *fpath, const wchar_t *charset) {
