@@ -1958,7 +1958,7 @@ static void usage() {
   fprintf(stderr,"Copyright (c) 2009-2013 bofh28 <bofh28@gmail.com>\n\n");
   fprintf(stderr,"Usage: crunch <minimum-length> <maximum-length> [<characters>] [options]\n\n");
   fprintf(stderr,"[characters]\n");
-  fprintf(stderr,"    abcd... = Lowercase letters, ABCD... = Uppercase letters, 0123... = Numbers, @!#$... = Symbols, <backward slash> = Space, <double quoted space> = Space\n\n");
+  fprintf(stderr, "    abcd... = Lowercase letters, ABCD... = Uppercase letters, 0123... = Numbers, @!#$... = Symbols, \\\\ = Space, \\\" \\\" = Space\n\n");
 
   fprintf(stderr,"Options: [-b <number><sizetype>] [-c <number>] [-d <number><pattern>] [-e <string>] [-f <file>] [-i] [-l] [-o <file>] [-p <charset>] [-q <file>] [-r] [-s] [-t <pattern>] [-u] [-z <method>]\n\n");
   fprintf(stderr,"[Options]\n");
